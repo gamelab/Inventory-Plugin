@@ -12,6 +12,9 @@ Author: Kiwi.js Team
 Website: www.kiwijs.org
 
 KiwiJS last version tested: 0.5.3
+
+Tutorials for this plugin can be found on the Kiwi.JS website here:
+http://www.kiwijs.org/documentation/tutorials/using-the-inventorymanager-plugin/
 ----------------------------------------------------------------------------------------
 Versions
 ----------------------------------------------------------------------------------------
