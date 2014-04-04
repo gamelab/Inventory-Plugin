@@ -1,0 +1,345 @@
+{
+    "project": {
+        "name": "Inventory",
+        "description": "Inventory Manager.",
+        "version": "1.0.0",
+        "url": "http://kiwijs.org/"
+    },
+    "files": {
+        "src\\Inventory-1.0.0.js": {
+            "name": "src\\Inventory-1.0.0.js",
+            "modules": {
+                "Plugins": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.InventoryManager": 1,
+                "Kiwi.Plugins.Inventory.InventoryManager": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1,
+                "Kiwi.Plugins.Inventory": 1
+            }
+        }
+    },
+    "modules": {
+        "Kiwi": {
+            "name": "Kiwi",
+            "submodules": {
+                "Plugins": 1
+            },
+            "classes": {
+                "Kiwi.Plugins.InventoryManager": 1,
+                "Kiwi.Plugins.Inventory.InventoryManager": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Kiwi.Plugins": 1,
+                "Kiwi.Plugins.Inventory": 1
+            },
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 14
+        },
+        "Plugins": {
+            "name": "Plugins",
+            "submodules": {},
+            "classes": {
+                "Kiwi.Plugins.InventoryManager": 1,
+                "Kiwi.Plugins.Inventory.InventoryManager": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {
+                "Kiwi.Plugins": 1,
+                "Kiwi.Plugins.Inventory": 1
+            },
+            "module": "Kiwi",
+            "namespace": "",
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 14,
+            "description": "The basic Inventory Manager Object. Contains name and version number."
+        }
+    },
+    "classes": {
+        "Kiwi.Plugins.InventoryManager": {
+            "name": "Kiwi.Plugins.InventoryManager",
+            "shortname": "Kiwi.Plugins.InventoryManager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins",
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 1,
+            "description": "The basic Inventory Manager Object. Contains name and version number."
+        },
+        "Kiwi.Plugins.Inventory.InventoryManager": {
+            "name": "Kiwi.Plugins.Inventory.InventoryManager",
+            "shortname": "Kiwi.Plugins.Inventory.InventoryManager",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory",
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 14,
+            "description": "A Kiwi Plugin GameObject that can manage basic inventory items and functionality.\n\nBy default, inventory items have an item description, and a count variable which keeps track of how many of the item you currently have.\nYou can add other variables to inventory items with the addVariable method, for example you could add a cost value to each item.",
+            "extends": "Entity",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 46,
+            "description": "A method that creates a new item type and mirrors the same variable names of existing items.",
+            "itemtype": "method",
+            "name": "createItem",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the new item type",
+                    "type": "String"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 64,
+            "description": "Sends the current inventory list and associated variables and values to the console log.",
+            "itemtype": "method",
+            "name": "outputInventory",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 80,
+            "description": "A method that adds a new property to all existing items and the default item object.",
+            "itemtype": "method",
+            "name": "addVariable",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the new property",
+                    "type": "String"
+                },
+                {
+                    "name": "defaultValue",
+                    "description": "The starting value",
+                    "type": "Number, boolean, or string"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 94,
+            "description": "A method that sets a specific inventory item's property",
+            "itemtype": "method",
+            "name": "setItemVariable",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                },
+                {
+                    "name": "varId",
+                    "description": "The property to change",
+                    "type": "String"
+                },
+                {
+                    "name": "val",
+                    "description": "The value to change the property to",
+                    "type": "Number, boolean, or string"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 110,
+            "description": "A method that changes a specific inventory item's property",
+            "itemtype": "method",
+            "name": "changeItemVariable",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                },
+                {
+                    "name": "varId",
+                    "description": "The property to change",
+                    "type": "String"
+                },
+                {
+                    "name": "val",
+                    "description": "The value to change the property by",
+                    "type": "Number, boolean, or string"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 126,
+            "description": "A method that returns a specific inventory item's property",
+            "itemtype": "method",
+            "name": "returnItemVariable",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                },
+                {
+                    "name": "varId",
+                    "description": "The property to return",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The returned value",
+                "type": "Value"
+            },
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 144,
+            "description": "A method that sets a specific inventory item's count value",
+            "itemtype": "method",
+            "name": "setItemCount",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                },
+                {
+                    "name": "val",
+                    "description": "The value to set the count property to",
+                    "type": "Number"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 159,
+            "description": "A method that changes a specific inventory item's count value",
+            "itemtype": "method",
+            "name": "changeItemCount",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                },
+                {
+                    "name": "val",
+                    "description": "The value to change the count property by",
+                    "type": "Number"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 174,
+            "description": "A method that returns a specific inventory item's count",
+            "itemtype": "method",
+            "name": "returnItemCount",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The returned value",
+                "type": "Number"
+            },
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 189,
+            "description": "A method that returns a specific inventory item's description",
+            "itemtype": "method",
+            "name": "returnItemDescription",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "The name of the inventory item",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The inventory item's description",
+                "type": "String"
+            },
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.Inventory.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins.Inventory"
+        }
+    ],
+    "warnings": []
+}
