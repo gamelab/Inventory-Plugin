@@ -1,7 +1,7 @@
 Inventory Manager
 =======================================
 
-Name: Inventory Manager.
+Name: Inventory Manager
 
 Version: 1.0.0
 
