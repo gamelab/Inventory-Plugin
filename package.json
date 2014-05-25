@@ -1,18 +1,20 @@
 {
-    "name": "Inventory",
+    "name": "InventoryManager",
     "version": "1.0.0",
     "description": "Inventory Manager.",
-    "author": "GameLab",
-    "logo": "xx",
+    "author": {
+        "name" : "GameLab",
+        "email" : ""
+        },
 
     "homepage": "http://kiwijs.org/",
-    "bugs": "xx",
-    "license": "xx",
-    "licenseUrl": "xx",
+    "bugs": "",
+    "license": "MIT",
+    "licenseUrl": "",
 
     "repository": {
         "type": "git",
-        "url": "xx"
+        "url": ""
     },
 
     "main": "src/Inventory-1.0.0.js",

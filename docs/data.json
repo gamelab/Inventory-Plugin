@@ -1,6 +1,6 @@
 {
     "project": {
-        "name": "Inventory",
+        "name": "InventoryManager",
         "description": "Inventory Manager.",
         "version": "1.0.0",
         "url": "http://kiwijs.org/"
@@ -38,7 +38,7 @@
                 "Kiwi.Plugins.Inventory": 1
             },
             "file": "src\\Inventory-1.0.0.js",
-            "line": 14
+            "line": 36
         },
         "Plugins": {
             "name": "Plugins",
@@ -56,7 +56,7 @@
             "module": "Kiwi",
             "namespace": "",
             "file": "src\\Inventory-1.0.0.js",
-            "line": 14,
+            "line": 36,
             "description": "The basic Inventory Manager Object. Contains name and version number."
         }
     },
@@ -88,7 +88,7 @@
             "submodule": "Plugins",
             "namespace": "Kiwi.Plugins.Inventory",
             "file": "src\\Inventory-1.0.0.js",
-            "line": 14,
+            "line": 36,
             "description": "A Kiwi Plugin GameObject that can manage basic inventory items and functionality.\n\nBy default, inventory items have an item description, and a count variable which keeps track of how many of the item you currently have.\nYou can add other variables to inventory items with the addVariable method, for example you could add a cost value to each item.",
             "extends": "Entity",
             "is_constructor": 1
@@ -97,7 +97,49 @@
     "classitems": [
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 46,
+            "line": 11,
+            "description": "The name of this plugin.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 19,
+            "description": "The version of this plugin in semver (semantic versioning) format",
+            "itemtype": "property",
+            "name": "version",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 27,
+            "description": "The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format",
+            "itemtype": "property",
+            "name": "minimumKiwiVersion",
+            "type": "String",
+            "access": "public",
+            "tagname": "",
+            "class": "Kiwi.Plugins.InventoryManager",
+            "module": "Kiwi",
+            "submodule": "Plugins",
+            "namespace": "Kiwi.Plugins"
+        },
+        {
+            "file": "src\\Inventory-1.0.0.js",
+            "line": 68,
             "description": "A method that creates a new item type and mirrors the same variable names of existing items.",
             "itemtype": "method",
             "name": "createItem",
@@ -117,7 +159,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 64,
+            "line": 86,
             "description": "Sends the current inventory list and associated variables and values to the console log.",
             "itemtype": "method",
             "name": "outputInventory",
@@ -130,7 +172,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 80,
+            "line": 102,
             "description": "A method that adds a new property to all existing items and the default item object.",
             "itemtype": "method",
             "name": "addVariable",
@@ -155,7 +197,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 94,
+            "line": 116,
             "description": "A method that sets a specific inventory item's property",
             "itemtype": "method",
             "name": "setItemVariable",
@@ -185,7 +227,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 110,
+            "line": 132,
             "description": "A method that changes a specific inventory item's property",
             "itemtype": "method",
             "name": "changeItemVariable",
@@ -215,7 +257,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 126,
+            "line": 148,
             "description": "A method that returns a specific inventory item's property",
             "itemtype": "method",
             "name": "returnItemVariable",
@@ -244,7 +286,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 144,
+            "line": 166,
             "description": "A method that sets a specific inventory item's count value",
             "itemtype": "method",
             "name": "setItemCount",
@@ -269,7 +311,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 159,
+            "line": 181,
             "description": "A method that changes a specific inventory item's count value",
             "itemtype": "method",
             "name": "changeItemCount",
@@ -294,7 +336,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 174,
+            "line": 196,
             "description": "A method that returns a specific inventory item's count",
             "itemtype": "method",
             "name": "returnItemCount",
@@ -318,7 +360,7 @@
         },
         {
             "file": "src\\Inventory-1.0.0.js",
-            "line": 189,
+            "line": 211,
             "description": "A method that returns a specific inventory item's description",
             "itemtype": "method",
             "name": "returnItemDescription",

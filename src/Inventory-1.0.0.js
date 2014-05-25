@@ -7,8 +7,30 @@
 * @class InventoryManager
 */
 Kiwi.Plugins.InventoryManager = {
+  
+  /**
+  * The name of this plugin.
+  * @property name
+  * @type String
+  * @public
+  */
     name: 'InventoryManager',
-    version: '1.0.0'
+
+  /**
+  * The version of this plugin in semver (semantic versioning) format
+  * @property version
+  * @type String
+  * @public
+  */
+    version: '1.0.0',
+
+  /**
+  * The minimum version of Kiwi.js required to run this plugin in semver (semantic versioning) format
+  * @property minimumKiwiVersion
+  * @type String
+  * @public
+  */
+    minimumKiwiVersion:'0.6.0'
 };
 
 /**

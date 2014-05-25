@@ -1,28 +1,11 @@
 var inventoryManager = Kiwi.Plugins.InventoryManager;
-/*console.log('INVENTORY MANAGER');
-inventoryManager.createItem('apple');
-inventoryManager.setItemVariable('apple', 'count', 5);
-console.log('Apples:', inventoryManager.returnItemVariable('apple', 'count'));
-inventoryManager.changeItemVariable('apple', 'count', 1);
-console.log('Apples:', inventoryManager.returnItemVariable('apple', 'count'));
 
-console.log('Apple:', inventoryManager.returnItemVariable('apple', 'description'));
-
-//adding a new variable to apples. "cost"
-
-inventoryManager.addVariable('cost', 0);
-
-inventoryManager.setItemVariable('apple', 'cost', 5);
-console.log('Apple cost:', inventoryManager.returnItemVariable('apple', 'cost'));
-
-inventoryManager.outputInventory();
-*/
 
 var InventoryExample = new Kiwi.State('InventoryExample');
 
 InventoryExample.preload = function () {
-    this.addImage('coin', 'assets/coin.png');
-    this.addImage('clock', 'assets/clock.png');
+    this.addImage('coin', '../assets/coin.png');
+    this.addImage('clock', '../assets/clock.png');
 }
 
 InventoryExample.create = function () {
@@ -100,4 +83,4 @@ InventoryExample.updateWeight = function () {
 */
 if (typeof gameOptions == "undefined") gameOptions = {};
 
-var game = new Kiwi.Game('game', 'InventoryExample', InventoryExample, gameOptions);
+var game = new Kiwi.Game(null, 'InventoryExample', InventoryExample, gameOptions);
